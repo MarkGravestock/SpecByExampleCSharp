@@ -46,7 +46,6 @@
   <ItemGroup>
     <EmbeddedResource Include="BuyCd\BuyCdInStock.html" />
     <Content Include="buy_cd.xlsx" />
-    <Content Include="ReadMe.md" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
