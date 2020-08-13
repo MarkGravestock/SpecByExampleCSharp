@@ -23,7 +23,7 @@
          distill the transient artifacts into residual documentation.
 - Depends on level of technical artifacts user/customer will tolerate when reviewing
     - In [10 years of SbE](https://gojko.net/2020/03/17/sbe-10-years.html) Gojko states that GWT has won the war, but I wonder if this is the case with
-    customers/users or where the participants in the process are in the product teams?
+    customers/users or whether the participants in the process are based in the product teams (more technically minded)?
 - From the testing perspective we are focusing on the specification not a script (this is possible with ATDD tools, e.g. FIT) which may happen a bit more with
 using a Unit Test framework. The fixture is hidden from the user.
 - Decision also depends on level of complexity of feature and what the type of ATDD test - is it at unit test level or part of an integration test?
