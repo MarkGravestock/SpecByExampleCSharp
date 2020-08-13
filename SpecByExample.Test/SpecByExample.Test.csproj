@@ -38,24 +38,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuyCd\BuyCdInStockFixture.cs" />
     <Compile Include="BuyCd\BuyCdInStockTest.cs" />
     <Compile Include="BuyCd\BuyCdInStockTop100Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
+    <EmbeddedResource Include="BuyCd\BuyCdInStock.html" />
     <Content Include="buy_cd.xlsx" />
+    <Content Include="ReadMe.md" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Concordion.NET" Version="1.5.1" />
     <PackageReference Include="Moq" Version="4.13.0" />
-    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit" Version="2.6.4" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CdWarehouse\CdWarehouse.csproj">
       <Project>{924b8dc8-a8e0-4078-8428-58217ac0ecfb}</Project>
       <Name>CdWarehouse</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SpecByExample.Test.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

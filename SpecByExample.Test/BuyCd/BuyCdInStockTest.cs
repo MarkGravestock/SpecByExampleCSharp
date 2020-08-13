@@ -24,6 +24,7 @@ namespace SpecByExample.Test.BuyCd
             string cardNumber, string expiry, string securityCode, bool paymentAccepted, int endStock, double charged,
             string chartNotification)
         {
+            // Not sure why test data is duplicated here
             _cardNumber = "1234234534564567";
             _expiry = "10/21";
             _securityCode = "817";
@@ -32,6 +33,8 @@ namespace SpecByExample.Test.BuyCd
             _chartNotification = chartNotification;
             
             _mockPayments = new Mock<IPayments>();
+            // This stub is not required? The payment accepted part of the spec is not implemented
+            // Primitive obsession - Credit Card object? Money object? Parameter object refactoring? Not really part of the demo.
             _mockPayments.Setup(payments => payments.Charge(_charged, _cardNumber, _expiry, _securityCode))
                 .Returns(paymentAccepted);
 

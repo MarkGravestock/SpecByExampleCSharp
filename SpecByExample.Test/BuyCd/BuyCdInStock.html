@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns:concordion="http://www.concordion.org/2007/concordion" lang="en">
+<head>
+    <title>User Story - Buy CD</title>
+</head>
+<body>
+    <h1>User Story - Buy CD</h1>
+    <h2>Scenario - In stock</h2>
+    <p>Plenty of room here to describe rules in English. GWT in next section could be refined to be more understandable to the customer.</p>
+    <p>
+        GIVEN a CD that's not in the Top 100 and we have it in stock, and the customer's card payment will be accepted<br/>
+        WHEN The customer buys that CD<br/>
+        THEN One copy is deducted from CD's stock<br/>
+        AND The customer's <b>card</b> is charged our price for that CD<br/>
+        AND The charts are notified of the sale<br/>
+    </p>
+    <h3>Example</h3>
+    <table concordion:execute="#result = BuyCdInStock(#cdTitle, #cdArtist, #chartPosition, #stock, #price,
+            #cardNumber, #expiry, #securityCode, #paymentAccepted)">
+        <tr>
+            <th concordion:set="#cdTitle">CD Title</th>
+            <th concordion:set="#cdArtist">CD Artist</th>
+            <th concordion:set="#chartPosition">Chart Position</th>
+            <th concordion:set="#stock">Stock</th>
+            <th concordion:set="#price">Our Price</th>
+            <th concordion:set="#cardNumber">Card Number</th>
+            <th concordion:set="#expiry">CC Expires</th>
+            <th concordion:set="#securityCode">CC Security Code</th>
+            <th concordion:set="#paymentAccepted">Payment Accepted</th>
+            <th concordion:assert-equals="#result.endStock">End Stock</th>
+            <th concordion:assert-equals="#result.chargedPrice">Charged Price</th>
+            <th concordion:assert-equals="#result.chargedCardNumber">Charged Card Number</th>
+            <th concordion:assert-equals="#result.chartNotification">Chart Notification</th>
+        </tr>
+        <tr>
+            <td>So</td>
+            <td>Peter Gabriel</td>
+            <td>101</td>
+            <td>10</td>
+            <td>9.99</td>
+            <td>1234234534564567</td>
+            <td>10/21</td>
+            <td>817</td>
+            <td>TRUE</td>
+            <td>9</td>
+            <td>9.99</td>
+            <td>1234234534564567</td>
+            <td>sales: 1, album: Peter Gabriel - So</td>
+        </tr>
+        <tr>
+            <td>Lionheart</td>
+            <td>Kate Bush</td>
+            <td>279</td>
+            <td>5</td>
+            <td>8.99</td>
+            <td>1234234534564567</td>
+            <td>10/21</td>
+            <td>817</td>
+            <td>true</td>
+            <td>4</td>
+            <td>8.99</td>,
+            <td>1234234534564567</td>
+            <td>sales: 1, album: Kate Bush - Lionheart</td>
+        </tr>
+    </table>
+</body>
+</html>
