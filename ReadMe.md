@@ -1,4 +1,6 @@
-﻿#### Quick Experiment to see how much overhead ATDD/SBE Framework adds
+![CI](https://github.com/MarkGravestock/SpecByExampleCSharp/workflows/CI/badge.svg)
+
+#### Quick Experiment to see how much overhead ATDD/SBE Framework adds
 
 - Solution not ATDDed, utilised example implementation, but wanted to understand how using such a framework may impede/assist.
 - Should try as a ATDD exercise for other requirements
