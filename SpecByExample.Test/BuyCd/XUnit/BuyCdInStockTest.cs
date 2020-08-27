@@ -2,7 +2,7 @@
 using Moq;
 using NUnit.Framework;
 
-namespace SpecByExample.Test.BuyCd
+namespace SpecByExample.Test.BuyCd.XUnit
 {
     [TestFixture("So", "Peter Gabriel", 101, 10, 9.99, "1234234534564567", "10/21", "817", true, 9, 9.99,
         "sales: 1, album: Peter Gabriel - So")]

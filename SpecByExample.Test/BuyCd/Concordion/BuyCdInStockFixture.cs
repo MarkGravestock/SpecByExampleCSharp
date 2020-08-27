@@ -6,7 +6,7 @@ using Concordion.Runners.NUnit;
 using Moq;
 using NUnit.Framework;
 
-namespace SpecByExample.Test.BuyCd
+namespace SpecByExample.Test.BuyCd.Concordion
 {
     [TestFixture]
     public class BuyCdInStockFixture : ExecutableSpecification

@@ -38,13 +38,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuyCd\BuyCdInStockFixture.cs" />
-    <Compile Include="BuyCd\BuyCdInStockTest.cs" />
-    <Compile Include="BuyCd\BuyCdInStockTop100Test.cs" />
+    <Compile Include="BuyCd\Concordion\BuyCdInStockFixture.cs" />
+    <Compile Include="BuyCd\XUnit\BuyCdInStockTest.cs" />
+    <Compile Include="BuyCd\XUnit\BuyCdInStockTop100Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BuyCd\BuyCdInStock.html" />
     <Content Include="buy_cd.xlsx" />
     <Content Include="requirements.txt" />
   </ItemGroup>
@@ -63,6 +62,9 @@
     <None Include="SpecByExample.Test.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BuyCd\Concordion\BuyCdInStock.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
