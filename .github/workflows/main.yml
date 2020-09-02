@@ -37,4 +37,4 @@ jobs:
       run:  '& "$(vswhere -property installationPath)\Common7\IDE\MSTest.exe" /help'
     
     - name: Run Tests
-      run: dotnet test
+      run: dotnet test -v:n
