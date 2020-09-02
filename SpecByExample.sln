@@ -9,6 +9,8 @@ ProjectSection(SolutionItems) = preProject
 	ReadMe.md = ReadMe.md
 EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecByExample.GherkinTest", "SpecByExample.GherkinTest\SpecByExample.GherkinTest.csproj", "{535AF8F2-EF88-4D99-959C-A86DF0C64477}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,5 +25,9 @@ Global
 		{924B8DC8-A8E0-4078-8428-58217AC0ECFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{924B8DC8-A8E0-4078-8428-58217AC0ECFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{924B8DC8-A8E0-4078-8428-58217AC0ECFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{535AF8F2-EF88-4D99-959C-A86DF0C64477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535AF8F2-EF88-4D99-959C-A86DF0C64477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535AF8F2-EF88-4D99-959C-A86DF0C64477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535AF8F2-EF88-4D99-959C-A86DF0C64477}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

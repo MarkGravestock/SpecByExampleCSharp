@@ -31,11 +31,11 @@ namespace SpecByExample.Test.BuyCd.Concordion
             string chartNotification = null;
             mockCharts.Setup(charts => charts.Notify(It.IsAny<string>())).Callback<string>(message => chartNotification = message);
             
-            var cd = new CD(cdTitle, cdArtist, chartPosition, price, stock, mockPayments.Object, mockCharts.Object);
+            var sut = new CD(cdTitle, cdArtist, chartPosition, price, stock, mockPayments.Object, mockCharts.Object);
             
-            cd.Buy(cardNumber, expiry, securityCode);
+            sut.Buy(cardNumber, expiry, securityCode);
             
-            return new Dictionary<String, String> {{"endStock", cd.Stock.ToString(CultureInfo.InvariantCulture)}, {"chargedPrice", chargedPrice.ToString(CultureInfo.InvariantCulture)}, {"chargedCardNumber", chargedCardNumber}, {"chartNotification", chartNotification}};
+            return new Dictionary<String, String> {{"endStock", sut.Stock.ToString(CultureInfo.InvariantCulture)}, {"chargedPrice", chargedPrice.ToString(CultureInfo.InvariantCulture)}, {"chargedCardNumber", chargedCardNumber}, {"chartNotification", chartNotification}};
         }        
     }
 }

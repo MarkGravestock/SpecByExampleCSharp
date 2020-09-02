@@ -29,6 +29,8 @@
 - From the testing perspective we are focusing on the specification not a script (this is possible with ATDD tools, e.g. FIT) which may happen a bit more with
 using a Unit Test framework. The fixture is hidden from the user.
 - Decision also depends on level of complexity of feature and what the type of ATDD test - is it at unit test level or part of an integration test?
+- Have added Gherkin example as well, in this instance I've hidden all the details of the values inside the fixture, it would be a matter of discussion
+with the user/customer which ones are important for the understanding of the scenario.
 
 ### Other considerations
 
