@@ -36,5 +36,5 @@ jobs:
     - name: Run a one-line script
       run:  '& "$(vswhere -property installationPath)\Common7\IDE\MSTest.exe" /help'
     
-    - name: Run Gherkin Test
+    - name: Run Tests
       run: dotnet test

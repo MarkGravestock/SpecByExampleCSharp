@@ -11,6 +11,11 @@ EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecByExample.GherkinTest", "SpecByExample.GherkinTest\SpecByExample.GherkinTest.csproj", "{535AF8F2-EF88-4D99-959C-A86DF0C64477}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{F1FB64A8-E748-4B4C-BB78-280B8495425F}"
+ProjectSection(SolutionItems) = preProject
+	.github\workflows\main.yml = .github\workflows\main.yml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
